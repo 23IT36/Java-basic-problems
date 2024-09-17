@@ -1,0 +1,189 @@
+  Question 1:
+import java.util.Scanner;
+class q2{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter A:");
+        int a=scan.nextInt();
+        System.out.print("Enter B:");
+        int b=scan.nextInt();
+        System.out.print("Enter C:");
+        int c=scan.nextInt();
+        int d=a*b*c;
+        int e=a+b+c;
+        int g=a-b-c;
+        float f=d/e;
+        System.out.println("The product of Three NUmbers is "+d);
+        System.out.println("The Addition of Three Numbers is "+e);
+        System.out.println("The division of Before Answers is "+f);
+        System.out.println("The Subtraction of Three Numbers is "+g);
+    }
+}
+
+Question 2:
+import java.util.Scanner;
+class q3{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter your Name:");
+        String name=scan.nextLine();
+        System.out.print("Enter the Score:");
+        float score=scan.nextFloat();
+        float coversion=score/10;
+        scan.nextLine();
+        System.out.print("Enter Your Department:");
+        String dept=scan.nextLine();
+        System.out.println(name);
+        System.out.println(coversion +"/10");
+        System.out.println(dept);
+
+
+    }
+}
+
+Question 3:
+
+import java.util.Scanner;
+class q2{
+    public static void  main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter Color:");
+        String name1=scan.nextLine();
+        if(name1.equals("Red")){
+            System.out.print("STOP!!");
+        }
+        else if(name1.equals("Yellow")){
+            System.out.print("BE READY!!");
+        }
+        else if(name1.equals("Green")){
+            System.out.print("GO!!");
+        }
+        else{
+            System.out.print("You should Give RED|YELLOW|GREEN Only");
+        }
+        
+    }
+}
+
+Question 4:
+
+import java.util.Scanner;
+class strcmp{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter First String:");
+        String str1=scan.nextLine();
+        System.out.print("Enter Seconf String:");
+        String str2=scan.nextLine();
+        System.out.print(str1.equals(str2));
+
+    }
+}
+
+Question 5:
+
+import java.util.Scanner;
+class strcmp{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+      System.out.print("Enter your Age:");
+      int age=scan.nextInt();
+      System.out.print("Enter your Salary:");
+      int salary=scan.nextInt();
+      if(age<=25 || salary>=20000){
+          System.out.print("Enter the loan Amount:");
+          int amount=scan.nextInt();
+               if(amount<=50000){
+                   System.out.print("Yor are Eligible for loan");
+                }
+               else{
+                System.out.print("Maximum loan amount is 50000");
+                   }
+      }
+      else{
+          System.out.print("You are not eligible for loan");
+      }
+    }
+}
+
+Question 6:
+
+import java.util.Scanner;
+class practice{
+    public static void main(String[] args)
+    {
+       Scanner scan=new Scanner(System.in);
+       System.out.print("Enter Year:");
+       int year=scan.nextInt();
+       if(year%4==0 && year%100!=0 || year%400==0)
+       {
+        System.out.print("This is Leap Year");
+       }
+       else{
+        System.out.print("This is not Leap Year");
+       }
+
+    }
+}
+
+Question 7:
+
+import java.util.Scanner;
+class practice{
+    public static void main(String[] args)
+    {
+       Scanner scan=new Scanner(System.in);
+       System.out.print("Enter Year:");
+       int year=scan.nextInt();
+       if(year%4==0 && year%100!=0 || year%400==0)
+       {
+        System.out.print("This is Leap Year");
+       }
+       else{
+        System.out.print("This is not Leap Year");
+       }
+
+    }
+}
+
+Question 8:
+
+import java.util.Scanner;
+class q4{
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("Enter Number1:");
+        int num1=scan.nextInt();
+        System.out.print("Enter Number2:");
+        int num2=scan.nextInt();
+        System.out.print("Enter NUmber3:");
+        int num3=scan.nextInt();
+        int max=0;
+        if(num1>num2){
+            if(num1>num3){
+                max=num1;
+            }
+            else{
+                max=num3;
+            }
+        } 
+        else if(num2>num3){
+            if(num2>num1){
+                 max=num2;
+            }
+            else{
+               max=num1;
+            }
+        }  
+        else{
+            max=num3;
+        }
+        System.out.print(max);  
+    }
+}
